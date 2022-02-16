@@ -11,5 +11,4 @@ public interface MatchesApi {
 
     @GET("matches.json")
     Call<List<Match>> getMatches();
-
 }

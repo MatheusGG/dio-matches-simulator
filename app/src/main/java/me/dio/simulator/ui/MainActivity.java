@@ -3,13 +3,11 @@ package me.dio.simulator.ui;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.os.Bundle;
-import android.util.Log;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.snackbar.Snackbar;
 
@@ -21,7 +19,6 @@ import me.dio.simulator.R;
 import me.dio.simulator.data.MatchesApi;
 import me.dio.simulator.databinding.ActivityMainBinding;
 import me.dio.simulator.domain.Match;
-import me.dio.simulator.domain.Team;
 import me.dio.simulator.ui.adapter.MatchesAdapter;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -82,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
             });
+
         });
     }
 
